@@ -1,0 +1,1 @@
+From the results of Activity 7, we can conclude that the Weight Quick union path compression is more efficient than the other algorithms. This is because the cost per operations for this algorithms is very low than the others.
