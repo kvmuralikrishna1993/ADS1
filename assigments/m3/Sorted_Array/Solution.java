@@ -20,12 +20,17 @@ public final class Solution {
         int s2 = sc.nextInt();
         int[] array = new int[s1 + s2];
         sc.nextLine();
-        String[] a1 = sc.nextLine().split(",");
+        String[] a1 = new String[s1];
+        if (s1 > 0) {
+            a1 = sc.nextLine().split(",");
+        } else {
+            sc.nextLine();
+        }
         String[] a2 = sc.nextLine().split(",");
         for (int i = 0; i < array.length; i++) {
-            if (i < a1.length) {
+            if (i < s1) {
                 array[i] = Integer.parseInt(a1[i]);
-            } else if (s2 > 0){
+            } else {
                 array[i] = Integer.parseInt(a2[i - s1]);
             }
         }
