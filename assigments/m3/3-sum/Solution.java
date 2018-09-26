@@ -7,10 +7,11 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
+
     }
     /**
-     * { function_main }
+     * { function_main }.
      *
      * @param      args  The arguments
      */
@@ -38,7 +39,7 @@ public final class Solution {
                 } else if ((array[i] + array[l] + array[r]) < 0) {
                     l++;    // moving forward (==> .....r)
                 } else {
-                    r--;   // moving backward (l.....<==)    // moving backward (l.....<==)
+                    r--;   // moving backward (l.....<==)
                 }
             }
         }
