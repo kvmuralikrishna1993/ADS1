@@ -25,7 +25,7 @@ public final class Solution {
         for (int i = 0; i < array.length; i++) {
             if (i < a1.length) {
                 array[i] = Integer.parseInt(a1[i]);
-            } else {
+            } else if (s2 > 0){
                 array[i] = Integer.parseInt(a2[i - s1]);
             }
         }
