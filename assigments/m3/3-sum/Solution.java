@@ -22,9 +22,15 @@ public class Solution {
             while (l < r) {
                 if ((array[i] + array[l] + array[r]) == sum) {
                    count++;
+                   l++;
+                   r--;
                 }
-                l++; // moving forward (==> .....r)
-                r--; // moving backward (l.....<==)
+                else if ((array[i] + array[l] + array[r]) < 0) {
+                    l++; // moving forward (==> .....r)
+                }
+                else {
+                     r--;     // moving backward (l.....<==)    // moving backward (l.....<==)
+                }
             }
         }
         System.out.println(count);
