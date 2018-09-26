@@ -1,8 +1,19 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
     }
+    /**
+     * { function_main }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
@@ -24,16 +35,13 @@ public class Solution {
                    count++;
                    l++;
                    r--;
-                }
-                else if ((array[i] + array[l] + array[r]) < 0) {
-                    l++; // moving forward (==> .....r)
-                }
-                else {
-                     r--;     // moving backward (l.....<==)    // moving backward (l.....<==)
+                } else if ((array[i] + array[l] + array[r]) < 0) {
+                    l++;    // moving forward (==> .....r)
+                } else {
+                    r--;   // moving backward (l.....<==)    // moving backward (l.....<==)
                 }
             }
         }
         System.out.println(count);
     }
-
 }
