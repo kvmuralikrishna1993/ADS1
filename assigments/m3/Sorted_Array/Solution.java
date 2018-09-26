@@ -18,15 +18,15 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int s1 = sc.nextInt();
         int s2 = sc.nextInt();
-        int[] array = new int[s1+s2];
+        int[] array = new int[s1 + s2];
         sc.nextLine();
         String[] a1 = sc.nextLine().split(",");
         String[] a2 = sc.nextLine().split(",");
         for (int i = 0; i < array.length; i++) {
-            if(i < a1.length) {
+            if (i < a1.length) {
                 array[i] = Integer.parseInt(a1[i]);
             } else {
-                array[i] = Integer.parseInt(a2[i - a1.length]);
+                array[i] = Integer.parseInt(a2[i - s1]);
             }
         }
         for (int i = 1; i < array.length; i++) {
@@ -42,9 +42,7 @@ public final class Solution {
             str += Integer.toString(array[i]);
             if (i != array.length - 1) {
                 str += ",";
-            } 
+            }
         } System.out.println(str);
-        
     }
-
 }
