@@ -4,6 +4,19 @@ import java.util.Scanner;
  *
  * @param      <E>   { parameter_description }
  */
+/**
+ * Exception for signaling invalid question errors.
+ */
+class EmptyException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { parameter_description }
+     */
+    EmptyException(final String s) {
+        super(s);
+    }
+}
 class Deque<E> {
 	/**
 	 * Class for node.
@@ -64,27 +77,35 @@ class Deque<E> {
 	 *
 	 * @return     { data }.
 	 */
-	public E popleft() {
-		E data = head.data;
-		head = head.next;
-		size--;
-		return data;
+	public E popleft() throws EmptyException {
+		if (size() > 0) {
+			E data = head.data;
+			head = head.next;
+			size--;
+			return data;
+		} else {
+			throw new EmptyException("Deck is empty");
+		}
 	}
 	/**
 	 * { function_popright }.
 	 *
 	 * @return     { data }.
 	 */
-	public E popright() {
-		E data = tail.data;
-		size--;
-		Node thead = head;
-		while (thead.next != tail) {
-			thead = thead.next;
+	public E popright() throws EmptyException {
+		if (size() > 0) {
+			E data = tail.data;
+			size--;
+			Node thead = head;
+			while (thead.next != tail) {
+				thead = thead.next;
+			}
+			thead.next = null;
+			tail = thead;
+			return data;
+		} else {
+			throw new EmptyException("Deck is empty");
 		}
-		thead.next = null;
-		tail = thead;
-		return data;
 	}
 	/**
 	 * { function_size }.
@@ -107,6 +128,10 @@ class Deque<E> {
 	 */
 	public void print() {
 		Node thead = head;
+		if (size == 0) {
+			System.out.println("[]");
+			return;
+		}
 		String str = "[";
 		while (thead != null){
 			str += thead.data +", ";
@@ -142,21 +167,29 @@ public class Solution {
         	String[] tokens = input.split(" ");
         	switch (tokens[0]) {
         	case "pushRight":
-            d.pushright(tokens[1]);
+            	d.pushright(tokens[1]);
             break;
             case "pushLeft":
-            d.pushleft(tokens[1]);
+            	d.pushleft(tokens[1]);
             break;
             case "popRight":
-            d.popright();
-            d.print();
+            try {
+          		d.popright();
+            	d.print();
+            } catch (Exception e) {
+            	System.out.println(e.getMessage());
+        	}
             break;
             case "popLeft":
-            d.popleft();
-            d.print();
+            try {
+            	d.popleft();
+            	d.print();
+            } catch (Exception e) {
+            	System.out.println(e.getMessage());
+        	}
             break;
             case "size":
-            System.out.println(d.size());
+            	System.out.println(d.size());
             break;
             default:
         }
