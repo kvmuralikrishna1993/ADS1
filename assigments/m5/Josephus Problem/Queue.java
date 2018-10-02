@@ -1,4 +1,17 @@
 import java.util.Iterator;
+/**
+ * Exception for signaling empty errors.
+ */
+class EmptyException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { parameter_description }
+     */
+    EmptyException(final String s) {
+        super(s);
+    }
+}
 public class Queue<E> implements Iterable<E> {
 	private class Node {
 		E data;
@@ -21,16 +34,18 @@ public class Queue<E> implements Iterable<E> {
 	}
 
 	public E dequeue() {
-		E data = head.data;
-		head = head.next;
-		size--;
-		return data;
+			E data = head.data;
+			head = head.next;
+			size--;
+			return data;
 	}
 
 	public boolean isEmpty() {
 		return size == 0;
 	}
-
+	public int size() {
+		return size;
+	}
 	public Iterator iterator() {
 		return new MyIterator(head);
 	}
