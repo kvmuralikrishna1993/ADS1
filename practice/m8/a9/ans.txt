@@ -1,0 +1,1 @@
+When the elements in an array are in reverse order then the selection sorting algorithm takes less time this is beacause of the numbers in reverse order, which need to sort from start to end, hence it takes more time.
