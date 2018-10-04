@@ -11,6 +11,11 @@ class EmptyException extends Exception {
         super(s);
     }
 }
+/**
+ * Class for steque.
+ *
+ * @param      <E>   { parameter_description }
+ */
 class Steque<E> {
     /**
      * Class for node.
@@ -49,7 +54,12 @@ class Steque<E> {
             tail = tail.next;
         }
     }
-    public void push(E data) {
+    /**
+     * { function_push }
+     *
+     * @param      data  The data
+     */
+    public void push(final E data) {
         Node node = new Node();
         node.data = data;
         size++;
@@ -61,6 +71,9 @@ class Steque<E> {
         }
         head = node;
     }
+    /**
+     * { function_pop }
+     */
     public void pop() { //throws EmptyException{
         if (!isEmpty()) {
             head = head.next;

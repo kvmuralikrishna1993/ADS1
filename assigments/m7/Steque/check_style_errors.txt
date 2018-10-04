@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:14: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:52:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:52:22: Parameter data should be final. [FinalParameters]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:64:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:57: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:74: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
