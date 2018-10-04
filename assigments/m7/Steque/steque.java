@@ -55,7 +55,7 @@ class Steque<E> {
         }
     }
     /**
-     * { function_push }
+     * { function_push }.
      *
      * @param      data  The data
      */
@@ -72,7 +72,7 @@ class Steque<E> {
         head = node;
     }
     /**
-     * { function_pop }
+     * { function_pop }.
      */
     public void pop() { //throws EmptyException{
         if (!isEmpty()) {

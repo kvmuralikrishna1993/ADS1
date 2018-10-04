@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:57: First sentence should end with a period. [JavadocStyle]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m7/Steque/steque.java:74: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 2 errors.
