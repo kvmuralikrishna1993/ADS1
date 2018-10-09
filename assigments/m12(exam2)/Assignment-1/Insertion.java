@@ -227,9 +227,6 @@ class Insertion {
         System.out.println();
         for (int i = 0; i < oc; i++) {
             System.out.print(a[i]);
-            if (i < a.length - 1) {
-                System.out.println();
-            }
         }
         int bc1 = bc;
         for (int i = oc; i < total; i++) {
