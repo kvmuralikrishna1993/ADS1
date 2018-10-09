@@ -28,7 +28,7 @@ public class LinkedList {
         * @param      data  The data
         * @param      next  The next
         */
-        Node(final int data,final Node next) {
+        Node(final int data, final Node next) {
             this.data = data;
             this.next = next;
         }
@@ -40,7 +40,7 @@ public class LinkedList {
      * @param      data      The data
      */
     public void insertAt(final int position, final int data) {
-        head = insertHelper(head, position , data);
+        head = insertHelper(head, position, data);
         size++;
     }
     /**
@@ -56,7 +56,7 @@ public class LinkedList {
         if (cnt == 0) {
             return new Node(ele, head);
         }
-        head.next = insertHelper(head.next, cnt - 1 , ele);
+        head.next = insertHelper(head.next, cnt - 1, ele);
         return head;
     }
     /**
@@ -102,6 +102,6 @@ public class LinkedList {
             thead = thead.next;
         }
 
-        return s.substring(0 , s.length() - 2);
+        return s.substring(0, s.length() - 2);
     }
 }
