@@ -226,7 +226,7 @@ class Insertion {
         final int sc, final int st, final int total) {
         System.out.println();
         for (int i = 0; i < oc; i++) {
-            System.out.print(a[i]);
+            System.out.println(a[i]);
         }
         int bc1 = bc;
         for (int i = oc; i < total; i++) {
