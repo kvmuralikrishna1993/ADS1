@@ -85,7 +85,7 @@ class Reservation implements Comparable<Reservation> {
             return -1;
         } else if (this.days > that.days) {
             return 1;
-        }  else if (this.reserv.equals("ST") || this.reserv.equals("SC")
+        }/**  else if (this.reserv.equals("ST") || this.reserv.equals("SC")
             || this.reserv.equals("BC") && that.reserv.equals("ST")
             || that.reserv.equals("SC") || that.reserv.equals("BC")) {
             int res1 = reser(this.reserv);
@@ -95,7 +95,7 @@ class Reservation implements Comparable<Reservation> {
             } else {
                 return 1;
             }
-        } else {
+        } **/else {
           return 0;
         }
     }
