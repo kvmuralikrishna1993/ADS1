@@ -238,7 +238,7 @@ class Insertion {
             if (val > 0) {
                 System.out.println(a[i]);
                 bc1--;
-                if (bc1 == 0) {
+                if (bc1 < 0) {
                     break;
                 }
             }
@@ -250,7 +250,7 @@ class Insertion {
             if (val > 0) {
                 System.out.println(a[i]);
                 st1--;
-                if (st1 == 0) {
+                if (st1 < 0) {
                     break;
                 }
             }
@@ -262,7 +262,7 @@ class Insertion {
             if (val > 0) {
                 System.out.println(a[i]);
                 sc1--;
-                if (sc1 == 0) {
+                if (sc1 < 0) {
                     break;
                 }
             }
