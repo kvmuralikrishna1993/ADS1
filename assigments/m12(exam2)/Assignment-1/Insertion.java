@@ -231,39 +231,45 @@ class Insertion {
                 System.out.println();
             }
         }
-        int bc1 = bc;
-        for (int i = oc; i < total; i++) {
-            String str = a[i].toString();
-            int val = str.indexOf("BC");
-            if (val > 0) {
-                System.out.println(a[i]);
-                bc1--;
-                if (bc1 == 0) {
-                    break;
+        if (bc > 0) {
+            int bc1 = bc;
+            for (int i = oc; i < total; i++) {
+                String str = a[i].toString();
+                int val = str.indexOf("BC");
+                if (val > 0) {
+                    System.out.println(a[i]);
+                    bc1--;
+                    if (bc1 == 0) {
+                        break;
+                    }
                 }
             }
         }
-        int st1 = st;
-        for (int i = oc; i < total; i++) {
-            String str = a[i].toString();
-            int val = str.indexOf("ST");
-            if (val > 0) {
-                System.out.println(a[i]);
-                st1--;
-                if (st1 == 0) {
-                    break;
+        if (st > 0) {
+            int st1 = st;
+            for (int i = oc; i < total; i++) {
+                String str = a[i].toString();
+                int val = str.indexOf("ST");
+                if (val > 0) {
+                    System.out.println(a[i]);
+                    st1--;
+                    if (st1 == 0) {
+                        break;
+                    }
                 }
             }
         }
-        int sc1 = sc;
-        for (int i = oc; i < total; i++) {
-            String str = a[i].toString();
-            int val = str.indexOf("SC");
-            if (val > 0) {
-                System.out.println(a[i]);
-                sc1--;
-                if (sc1 == 0) {
-                    break;
+        if (sc > 0) {
+            int sc1 = sc;
+            for (int i = oc; i < total; i++) {
+                String str = a[i].toString();
+                int val = str.indexOf("SC");
+                if (val > 0) {
+                    System.out.println(a[i]);
+                    sc1--;
+                    if (sc1 == 0) {
+                        break;
+                    }
                 }
             }
         }
