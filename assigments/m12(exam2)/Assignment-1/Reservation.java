@@ -81,13 +81,9 @@ class Reservation implements Comparable<Reservation> {
             return -1;
         } else if (Integer.parseInt(this.sub2) < Integer.parseInt(that.sub2)) {
             return 1;
-        } else if (this.days < that.days) {
-            return -1;
-        } else if (this.days > that.days) {
-            return 1;
-        }/**  else if (this.reserv.equals("ST") || this.reserv.equals("SC")
-            || this.reserv.equals("BC") && that.reserv.equals("ST")
-            || that.reserv.equals("SC") || that.reserv.equals("BC")) {
+        } else if ((this.reserv.equals("ST") || this.reserv.equals("SC")
+            || this.reserv.equals("BC") || this.reserv.equals("OC")) && (that.reserv.equals("ST")
+            || that.reserv.equals("SC") || that.reserv.equals("BC") || that.reserv.equals("OC"))) {
             int res1 = reser(this.reserv);
             int res2 = reser(that.reserv);
             if (res1 > res2) {
@@ -95,7 +91,11 @@ class Reservation implements Comparable<Reservation> {
             } else {
                 return 1;
             }
-        } **/else {
+        } else if (this.days < that.days) {
+            return -1;
+        } else if (this.days > that.days) {
+            return 1;
+        } else {
           return 0;
         }
     }
