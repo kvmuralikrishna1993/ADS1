@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m10/LinkedListusingRecursion/LinkedList.java:31:24: 'data' hides a field. [HiddenField]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m10/LinkedListusingRecursion/LinkedList.java:31:41: 'next' hides a field. [HiddenField]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m10/LinkedListusingRecursion/LinkedList.java:55:41: 'head' hides a field. [HiddenField]
-[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m10/LinkedListusingRecursion/LinkedList.java:75:35: 'head' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 4 errors.

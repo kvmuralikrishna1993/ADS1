@@ -23,14 +23,14 @@ public class LinkedList {
         */
         private Node next;
         /**
-        * Constructs the object.
-        *
-        * @param      data  The data
-        * @param      next  The next
-        */
-        Node(final int data, final Node next) {
-            this.data = data;
-            this.next = next;
+         * Constructs the object.
+         *
+         * @param      data1  The data 1
+         * @param      next1  The next 1
+         */
+        Node(final int data1, final Node next1) {
+            this.data = data1;
+            this.next = next1;
         }
     }
     /**
@@ -44,20 +44,20 @@ public class LinkedList {
         size++;
     }
     /**
-     * insertHelper.
+     * { function_helper }.
      *
-     * @param      head  The head
-     * @param      cnt   The count
-     * @param      ele   The ele
+     * @param      head1  The head 1
+     * @param      cnt    The count
+     * @param      ele    The ele
      *
      * @return     { description_of_the_return_value }
      */
-    public Node insertHelper(final Node head, final int cnt, final int ele) {
+    public Node insertHelper(final Node head1, final int cnt, final int ele) {
         if (cnt == 0) {
-            return new Node(ele, head);
+            return new Node(ele, head1);
         }
-        head.next = insertHelper(head.next, cnt - 1, ele);
-        return head;
+        head1.next = insertHelper(head1.next, cnt - 1, ele);
+        return head1;
     }
     /**
      * reverse.
@@ -66,19 +66,19 @@ public class LinkedList {
         head = reverseHelper(head);
     }
     /**
-     * reverseHelper.
+     * { function_helper}.
      *
-     * @param      head  The head
+     * @param      head1  The head 1
      *
      * @return     { description_of_the_return_value }
      */
-    Node reverseHelper(final Node head) {
-        if (head == null || head.next == null) {
-            return head;
+    Node reverseHelper(final Node head1) {
+        if (head1 == null || head1.next == null) {
+            return head1;
         }
-        Node nhead = reverseHelper(head.next);
-        head.next.next = head;
-        head.next = null;
+        Node nhead = reverseHelper(head1.next);
+        head1.next.next = head1;
+        head1.next = null;
         return nhead;
     }
     /**
