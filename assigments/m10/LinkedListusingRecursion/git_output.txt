@@ -1,4 +1,2 @@
 warning: CRLF will be replaced by LF in assigments/m10/LinkedListusingRecursion/LinkedList.java.
 The file will have its original line endings in your working directory.
-warning: CRLF will be replaced by LF in assigments/m10/LinkedListusingRecursion/Solution.java.
-The file will have its original line endings in your working directory.

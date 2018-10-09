@@ -3,16 +3,16 @@
  */
 public class LinkedList {
     /**
-    * head;
-    */
+     * { var_head }.
+     */
     private Node head;
     /**
-     * { var_size }
+     * { var_size }.
      */
     private int size = 0;
     /**
-    * Class for node.
-    */
+     * Class for node.
+     */
     private class Node {
         /**
         * data.
@@ -28,20 +28,18 @@ public class LinkedList {
         * @param      data  The data
         * @param      next  The next
         */
-        Node(int data, Node next) {
+        Node(final int data,final Node next) {
             this.data = data;
             this.next = next;
         }
     }
     /**
-     * insertAt.
+     * { function_insert}.
      *
      * @param      position  The position
      * @param      data      The data
-     *
-     * @return     { description_of_the_return_value }
      */
-    public void insertAt(int position, int data) {
+    public void insertAt(final int position, final int data) {
         head = insertHelper(head, position , data);
         size++;
     }
@@ -54,7 +52,7 @@ public class LinkedList {
      *
      * @return     { description_of_the_return_value }
      */
-    public Node insertHelper(Node head, int cnt, int ele) {
+    public Node insertHelper(final Node head, final int cnt, final int ele) {
         if (cnt == 0) {
             return new Node(ele, head);
         }
@@ -74,7 +72,7 @@ public class LinkedList {
      *
      * @return     { description_of_the_return_value }
      */
-    Node reverseHelper(Node head) {
+    Node reverseHelper(final Node head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -86,7 +84,7 @@ public class LinkedList {
     /**
      * { function_size }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public int size() {
         return size;
@@ -94,7 +92,7 @@ public class LinkedList {
     /**
      * print.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public String print() {
         Node thead = head;
