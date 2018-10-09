@@ -225,8 +225,10 @@ class Insertion {
     public void seats(final Comparable[] a, final int oc, final int bc,
         final int sc, final int st, final int total) {
         System.out.println();
+        int count = 0;
         for (int i = 0; i < oc; i++) {
             System.out.print(a[i]);
+            count++;
             if (i < a.length - 1) {
                 System.out.println();
             }
@@ -239,6 +241,7 @@ class Insertion {
                 if (val > 0) {
                     System.out.println(a[i]);
                     bc1--;
+                    count++;
                     if (bc1 == 0) {
                         break;
                     }
@@ -253,6 +256,7 @@ class Insertion {
                 if (val > 0) {
                     System.out.println(a[i]);
                     st1--;
+                    count++;
                     if (st1 == 0) {
                         break;
                     }
@@ -267,11 +271,24 @@ class Insertion {
                 if (val > 0) {
                     System.out.println(a[i]);
                     sc1--;
+                    count++;
                     if (sc1 == 0) {
                         break;
                     }
                 }
             }
+        }
+        if (count != (oc + bc + sc + st)) {
+            int oc1 = bc+sc+st;
+            for (int i = oc; i < total; i++) {
+                String str = a[i].toString();
+                System.out.println(a[i]);
+                oc1--;
+                if (oc1 == 0) {
+                    break;
+                }
+            }
+
         }
     }
 }
