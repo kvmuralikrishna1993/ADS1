@@ -226,7 +226,10 @@ class Insertion {
         final int sc, final int st, final int total) {
         System.out.println();
         for (int i = 0; i < oc; i++) {
-            System.out.println(a[i]);
+            System.out.print(a[i]);
+            if (i < a.length - 1) {
+                System.out.println();
+            }
         }
         int bc1 = bc;
         for (int i = oc; i < total; i++) {
@@ -235,7 +238,7 @@ class Insertion {
             if (val > 0) {
                 System.out.println(a[i]);
                 bc1--;
-                if (bc1 < 0) {
+                if (bc1 == 0) {
                     break;
                 }
             }
@@ -247,7 +250,7 @@ class Insertion {
             if (val > 0) {
                 System.out.println(a[i]);
                 st1--;
-                if (st1 < 0) {
+                if (st1 == 0) {
                     break;
                 }
             }
@@ -259,7 +262,7 @@ class Insertion {
             if (val > 0) {
                 System.out.println(a[i]);
                 sc1--;
-                if (sc1 < 0) {
+                if (sc1 == 0) {
                     break;
                 }
             }
