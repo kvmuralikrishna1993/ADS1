@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 public class Solution {
 	private Solution() {
 
@@ -10,8 +9,19 @@ public class Solution {
 		while(sc.hasNextLine()) {
 			String[] tokens = sc.nextLine().split(",");
 			mim.sort(tokens);
-			System.out.println(Arrays.toString(tokens));
+			toString(tokens);
 			System.out.println();
 		}
+	}
+	public static void toString(String[] args) {
+		String str = "[";
+		for (int i = 0; i < args.length; i++) {
+			str += args[i];
+			if (i != args.length -1) {
+				str += ", ";
+			}
+		}
+		str += "]";
+		System.out.println(str); 
 	}
 }
