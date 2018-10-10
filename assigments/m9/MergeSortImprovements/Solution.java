@@ -1,8 +1,19 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
+	/**
+	 * { function_main }.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Merge mim = new Merge();
@@ -13,15 +24,20 @@ public class Solution {
 			System.out.println();
 		}
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void toString(String[] args) {
 		String str = "[";
 		for (int i = 0; i < args.length; i++) {
 			str += args[i];
-			if (i != args.length -1) {
+			if (i != args.length - 1) {
 				str += ", ";
 			}
 		}
 		str += "]";
-		System.out.println(str); 
+		System.out.println(str);
 	}
 }
