@@ -15,15 +15,21 @@ class Merge {
      * @param      mid   The middle
      * @param      hi    The higher
      */
-    private void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int hi) {
+    private void merge(final Comparable[] a, final Comparable[] aux,
+        final int lo, final int mid, final int hi) {
         assert isSorted(a, lo, mid);
-        assert isSorted(a, mid+1, hi);
-        int i = lo, j = mid+1;
+        assert isSorted(a, mid + 1, hi);
+        int i = lo, j = mid + 1;
         for (int k = lo; k <= hi; k++) {
-            if      (i > mid)              aux[k] = a[j++];
-            else if (j > hi)               aux[k] = a[i++];
-            else if (less(a[j], a[i]))     aux[k] = a[j++];
-            else                           aux[k] = a[i++];
+            if (i > mid) {
+                aux[k] = a[j++];
+            } else if (j > hi) {
+                aux[k] = a[i++];
+            } else if (less(a[j], a[i])) {
+                aux[k] = a[j++];
+            } else {
+                aux[k] = a[i++];
+            }
         }
         assert isSorted(aux, lo, hi);
     }
@@ -35,8 +41,10 @@ class Merge {
      * @param      lo    The lower
      * @param      hi    The higher
      */
-    private void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
-        if (hi <= lo + 7) {
+    private void sort(final Comparable[] a, final Comparable[] aux,
+        final int lo, final int hi) {
+        final int limit  = 7;
+        if (hi <= lo + limit) {
             System.out.println("Insertion sort method invoked...");
             insertionSort(aux, lo, hi);
             return;
@@ -44,11 +52,12 @@ class Merge {
         int mid = lo + (hi - lo) / 2;
         sort(aux, a, lo, mid);
         sort(aux, a, mid + 1, hi);
-        if (!less(a[mid+1], a[mid])) {
-            for(int i = lo; i <= hi; i++) {
+        if (!less(a[mid + 1], a[mid])) {
+            for (int i = lo; i <= hi; i++) {
                 aux[i] = a[i];
             }
-            System.out.println("Array is already sorted. So, skipped the call to merge...");    
+            System.out.println(
+                "Array is already sorted. So, skipped the call to merge...");
             return;
         }
         merge(a, aux, lo, mid, hi);
@@ -58,9 +67,9 @@ class Merge {
      *
      * @param      a     { parameter_description }
      */
-    public void sort(Comparable[] a) {
+    public void sort(final Comparable[] a) {
         Comparable[] aux = a.clone();
-        sort(aux, a, 0, a.length-1);
+        sort(aux, a, 0, a.length - 1);
         assert isSorted(a);
     }
     /**
@@ -71,7 +80,7 @@ class Merge {
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean less(Comparable v, Comparable w) {
+    private boolean less(final Comparable v, final Comparable w) {
         return v.compareTo(w) < 0;
     }
     /**
@@ -81,7 +90,7 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    private boolean isSorted(Comparable[] a) {
+    private boolean isSorted(final Comparable[] a) {
         return isSorted(a, 0, a.length - 1);
     }
     /**
@@ -93,9 +102,13 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    private boolean isSorted(Comparable[] a, int lo, int hi) {
-        for (int i = lo + 1; i <= hi; i++)
-            if (less(a[i], a[i-1])) return false;
+    private boolean isSorted(final Comparable[] a,
+        final int lo, final int hi) {
+        for (int i = lo + 1; i <= hi; i++) {
+            if (less(a[i], a[i - 1])) {
+                return false;
+            }
+        }
         return true;
     }
     /**
@@ -105,10 +118,11 @@ class Merge {
      * @param      lo    The lower
      * @param      hi    The higher
      */
-    public void insertionSort(Comparable[] a, int lo, int hi) {
+    public void insertionSort(final Comparable[] a,
+        final int lo, final int hi) {
         for (int i = lo; i <= hi; i++) {
-            for (int j = i; j > lo && less(a[j], a[j-1]); j--) {
-                exch(a, j, j-1);
+            for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
+                exch(a, j, j - 1);
             }
         }
         assert isSorted(a, lo, hi);
@@ -120,7 +134,7 @@ class Merge {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    private void exch(Comparable[] a, int i, int j) {
+    private void exch(final Comparable[] a, final int i, final int j) {
         Comparable swap = a[i];
         a[i] = a[j];
         a[j] = swap;
