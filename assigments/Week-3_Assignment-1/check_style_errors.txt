@@ -1,0 +1,16 @@
+Starting audit...
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:1:1: Redundant import from the java.lang package - java.lang.Math. [RedundantImport]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:1:8: Unused import - java.lang.Math. [UnusedImports]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:6: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:10: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:26:15: Parameter name1 should be final. [FinalParameters]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:26:29: Parameter value1 should be final. [FinalParameters]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:30: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:38: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:46: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:53:30: Parameter that should be final. [FinalParameters]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:58:65: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/Week-3_Assignment-1/Stock.java:60:65: '{' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 13 errors.
