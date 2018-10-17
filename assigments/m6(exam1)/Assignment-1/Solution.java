@@ -56,28 +56,37 @@ final class AddLargeNumbers {
         final int rem = 10;
         final int condition = 9;
         while (!list1.isEmpty() || !list2.isEmpty()) {
+            //------------------------------------------
+            //first number digit
             if (list1.size() > 0) {
-                String digit = list1.pop().toString();
+                String digit = list1.pop().toString(); 
                 x = Integer.parseInt(digit);
             } else {
                 x = 0;
             }
+            //-----------------------------------------
+            //second number digit
             if (list2.size() > 0) {
                 String digit = list2.pop().toString();
                 y = Integer.parseInt(digit);
             } else {
                 y = 0;
             }
+            //------------------------------------------
+            //carry assign
             sum = x + y + carry;
             if (sum > condition) {
                 carry = 1;
             } else {
-            carry = 0;
+                carry = 0;
             }
+            //-------------------------------------------
+            //appending each digit to result
             str = Integer.toString(sum % rem) + str;
             if (list1.isEmpty() && list2.isEmpty()) {
                 str = Integer.toString(carry) + str;
             }
+            //-------------------------------------------
         }
         if ("0".equals(str.substring(0, 1))) {
             str = str.substring(1);
