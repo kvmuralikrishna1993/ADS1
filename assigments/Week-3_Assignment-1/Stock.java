@@ -15,7 +15,6 @@ class Stock implements Comparable<Stock> {
 	 * Constructs the object.
 	 */
 	Stock() {
-
 	}
 	/**
 	 * Constructs the object.
@@ -57,7 +56,7 @@ class Stock implements Comparable<Stock> {
             return -1;
         } else if (this.getname().compareTo(that.getname()) < 0){
             return -1;
-        } else if (this.getname().compareTo(that.getname()) < 0){
+        } else if (this.getname().compareTo(that.getname()) > 0){
             return 1;
         } else {
             return 0;

@@ -15,13 +15,15 @@ public class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
+		final int sqrepeat = 6;
+		final int firstfive = 5; 
 		Scanner sc = new Scanner(System.in);
 		int count = Integer.parseInt(sc.nextLine());
 		Stock[][] stock = new Stock[6][count];
 		Stock st = new Stock();
 		MaxPQ<Stock> max = new MaxPQ<Stock>();
 		MinPQ<Stock> min = new MinPQ<Stock>();
-		for (int i = 0; i < 6; i++) {
+		for (int i = 0; i < sqrepeat; i++) {
 			Stock[] starray = new Stock[count];
 			for (int j = 0; j < count; j++) {
 				String[] tokens = sc.nextLine().split(",");
@@ -37,13 +39,13 @@ public class Solution {
 				max.insert(stock[i][j]);
 				min.insert(stock[i][j]);
 			}
-			for (int k = 0; k < 5; k++) {
-				System.out.println(max.max().getname()+","+max.max().getvalue());
+			for (int k = 0; k < firstfive; k++) {
+				System.out.println(max.max().getname() + " " + max.max().getvalue());
 				max.delMax();
 			}
 			System.out.println();
-			for (int k = 0; k < 5; k++) {
-				System.out.println(min.min().getname()+","+min.min().getvalue());
+			for (int k = 0; k < firstfive; k++) {
+				System.out.println(min.min().getname() + " " + min.min().getvalue());
 				min.delMin();
 			}
 			System.out.println();
