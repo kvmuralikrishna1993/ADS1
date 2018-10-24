@@ -5,8 +5,17 @@ import java.util.Comparator;
  * @param      <Key>  The key
  */
 public class MinPQ<Key> {
+    /**
+     * {key}.
+     */
     private Key[] pq;
+    /**
+     * { int }.
+     */
     private int n;
+    /**
+     * { comparator }.
+     */
     private Comparator<Key> comparator;
     /**
      * Initializes an empty priority queue with the given initial capacity.
@@ -17,7 +26,6 @@ public class MinPQ<Key> {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
-
     /**
      * Initializes an empty priority queue.
      */
@@ -32,7 +40,6 @@ public class MinPQ<Key> {
     public boolean isEmpty() {
         return n == 0;
     }
-
     /**
      * Returns the number of keys on this priority queue.
      *
@@ -41,7 +48,6 @@ public class MinPQ<Key> {
     public int size() {
         return n;
     }
-
     /**
      * Returns a smallest key on this priority queue.
      *
@@ -62,7 +68,6 @@ public class MinPQ<Key> {
         }
         pq = temp;
     }
-
     /**
      * Adds a new key to this priority queue.
      *
@@ -75,18 +80,18 @@ public class MinPQ<Key> {
         pq[++n] = x;
         swim(n);
     }
-
     /**
      * Removes and returns a smallest key on this priority queue.
      *
      * @return a smallest key on this priority queue
      */
     public Key delMin() {
+        final int four = 4;
         Key min = pq[1];
         exch(1, n--);
         sink(1);
         pq[n + 1] = null;
-        if ((n > 0) && (n == (pq.length - 1) / 4)) {
+        if ((n > 0) && (n == (pq.length - 1) / four)) {
             resize(pq.length / 2);
         }
         return min;
@@ -94,9 +99,10 @@ public class MinPQ<Key> {
     /**
     * Swim function.
     * Complexity logN.
-    * @param      k     { parameter_description }
+    * @param      k1     { parameter_description }
     */
-    private void swim(int k) {
+    private void swim(final int k1) {
+        int k = k1;
         while (k > 1 && greater(k / 2, k)) {
             exch(k, k / 2);
             k = k / 2;
@@ -105,9 +111,10 @@ public class MinPQ<Key> {
     /**
      * Sink function.
      * Complexity logN.
-     * @param      k     { parameter_description }
+     * @param      k1     { parameter_description }
      */
-    private void sink(int k) {
+    private void sink(final int k1) {
+        int k = k1;
         while (2 * k <= n) {
             int j = 2 * k;
             if (j < n && greater(j, j + 1)) {
@@ -141,7 +148,7 @@ public class MinPQ<Key> {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    private void exch(final int i, int j) {
+    private void exch(final int i, final int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
         pq[j] = swap;
