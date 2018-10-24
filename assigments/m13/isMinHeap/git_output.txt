@@ -1,0 +1,46 @@
+warning: CRLF will be replaced by LF in assigments/m13/isMinHeap/testcases/output001.txt.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/m13/isMinHeap/testcases/output002.txt.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/m13/isMinHeap/testcases/output003.txt.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/m13/isMinHeap/testcases/output004.txt.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/m13/isMinHeap/testcases/output005.txt.
+The file will have its original line endings in your working directory.
+[master 6b11b7b] "ads1_m13_a1: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 31 files changed, 246 insertions(+)
+ create mode 100644 assigments/m13/isMinHeap/13. isMinheap.docx
+ create mode 100644 assigments/m13/isMinHeap/Minheap.class
+ create mode 100644 assigments/m13/isMinHeap/Solution.class
+ create mode 100755 assigments/m13/isMinHeap/Solution.java
+ create mode 100644 assigments/m13/isMinHeap/check_style_errors.txt
+ create mode 100644 assigments/m13/isMinHeap/git_output.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/input001.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/input002.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/input003.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/input004.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/input005.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/output001.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/output002.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/output003.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/output004.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/output005.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/problem_id.txt
+ create mode 100644 assigments/m13/isMinHeap/md5/score.txt
+ create mode 100644 assigments/m13/isMinHeap/result/score.json
+ create mode 100644 assigments/m13/isMinHeap/testcases/input001.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/input002.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/input003.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/input004.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/input005.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/output001.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/output002.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/output003.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/output004.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/output005.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases/problem_id.txt
+ create mode 100644 assigments/m13/isMinHeap/testcases_output.txt
+To https://github.com/kvmuralikrishna1993/ADS1.git
+   f1c20e6..6b11b7b  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
