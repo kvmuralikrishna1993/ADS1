@@ -1,0 +1,2 @@
+warning: CRLF will be replaced by LF in assigments/m14/14.1 Dynamic Median Finding/DynamicMedian.java.
+The file will have its original line endings in your working directory.
