@@ -1,0 +1,13 @@
+Starting audit...
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:2:1: Redundant import from the java.lang package - java.lang.Comparable. [RedundantImport]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:2:8: Unused import - java.lang.Comparable. [UnusedImports]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:6:4: Unused @param tag for '<key>'. [JavadocType]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:7:4: Unused @param tag for '<value>'. [JavadocType]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:9: Type Javadoc comment is missing @param <Key> tag. [JavadocType]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:9: Type Javadoc comment is missing @param <Value> tag. [JavadocType]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:39: First sentence should end with a period. [JavadocStyle]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:88:5: Class 'BinaryST' looks like designed for extension (can be subclassed), but the method 'get' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BinaryST' final or making the method 'get' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:88:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/m15/15.1 BinarySearchSymbolTable/BinaryST.java:156:47: '4' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 10 errors.
