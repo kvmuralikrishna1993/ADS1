@@ -1,0 +1,13 @@
+Starting audit...
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:2:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:4:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:5: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:26:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:29:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/Muralikrishna/Desktop/ADS1/assigments/exam4/2/Student.java:32:9: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 10 errors.
