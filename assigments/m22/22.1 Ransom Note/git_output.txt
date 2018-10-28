@@ -1,0 +1,6 @@
+warning: CRLF will be replaced by LF in assigments/m22/22.1 Ransom Note/Queue.java.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/m22/22.1 Ransom Note/SeparateChainingHashST.java.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/m22/22.1 Ransom Note/SequentialSearchST.java.
+The file will have its original line endings in your working directory.
