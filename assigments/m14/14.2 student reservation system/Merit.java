@@ -35,8 +35,8 @@ public class Merit {
         array[size++] = stu;
     }
     /**
-     * Returns the merit list
-     * Complexity N
+     * Returns the merit list.
+     * Complexity N.
      * @return     { description_of_the_return_value }
      */
     public String meritlist() {
@@ -50,14 +50,18 @@ public class Merit {
     }
     /**
      * Allocates the vacencyancies according to the reqirement.
-     * Complexity O(N^2)
+     * Complexity O(N^2).
+     *
      * @param      vacency    The vacency
      * @param      urvacency  The urvacency
      * @param      bcvacency  The bcvacency
      * @param      scvacency  The scvacency
      * @param      stvacency  The stvacency
+     *
+     * @return     { description_of_the_return_value }
      */
-    public String allocation(final int vacency, final int urvacency, final int bcvacency, final int scvacency, final int stvacency) {
+    public String allocation(final int vacency, final int urvacency,
+        final int bcvacency, final int scvacency, final int stvacency) {
         int n = vacency;
         int count = 0;
         int bcres = bcvacency;

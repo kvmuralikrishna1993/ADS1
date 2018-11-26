@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -29,12 +29,14 @@ public class Solution {
         int stvacency = Integer.parseInt(scan.nextLine());
         while (scan.hasNext()) {
             String[] details = scan.nextLine().split(",");
-            merit.add(new Student(details[0], details[1], Integer.parseInt(details[2]
-                ), Integer.parseInt(details[three]), Integer.parseInt(details[four]
-                ), Integer.parseInt(details[five]), details[six]));
+            merit.add(new Student(details[0], details[1],
+            Integer.parseInt(details[2]), Integer.parseInt(details[three]),
+            Integer.parseInt(details[four]), Integer.parseInt(details[five]),
+            details[six]));
         }
         System.out.println(merit.meritlist());
         System.out.println();
-        System.out.println(merit.allocation(vacency, urvacency, bcvacency, scvacency, stvacency));
+        System.out.println(merit.allocation(vacency, urvacency,
+                                            bcvacency, scvacency, stvacency));
     }
 }
