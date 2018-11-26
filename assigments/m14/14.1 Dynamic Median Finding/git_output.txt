@@ -1,2 +1,8 @@
 warning: CRLF will be replaced by LF in assigments/m14/14.1 Dynamic Median Finding/DynamicMedian.java.
 The file will have its original line endings in your working directory.
+[master ce88329] "ads1_m14_a1: 4/4 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 7 files changed, 40 insertions(+), 29 deletions(-)
+ rewrite assigments/m14/14.1 Dynamic Median Finding/result/score.json (70%)
+To https://github.com/kvmuralikrishna1993/ADS1.git
+   e16c868..ce88329  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.

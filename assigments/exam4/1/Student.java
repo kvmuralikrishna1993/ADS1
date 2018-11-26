@@ -23,8 +23,8 @@ class Student implements Comparable<Student> {
 			return 0;
 		}
 	}
-	public String toString() {
-		return this.name+","+this.roll;
+	public String getname() {
+		return this.name;
 	}
 	public String getroll() {
 		return this.roll;

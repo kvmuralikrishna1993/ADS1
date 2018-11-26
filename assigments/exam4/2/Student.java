@@ -1,4 +1,10 @@
+/**
+ * Class for student.
+ */
 class Student implements Comparable<Student> {
+	/**
+	 * { var_description }
+	 */
 	private String roll;
 	private String name;
 	private Double totalmarks;

@@ -1,2 +1,46 @@
 warning: CRLF will be replaced by LF in assigments/exam4/2/BST.java.
 The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/exam4/2/readme.txt.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/exam4/2/testcases/input000.txt.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/exam4/2/testcases/input001.txt.
+The file will have its original line endings in your working directory.
+warning: CRLF will be replaced by LF in assigments/exam4/2/testcases/input002.txt.
+The file will have its original line endings in your working directory.
+[master 52c051a] "m24_a2_1: 1/4 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 31 files changed, 3360 insertions(+)
+ create mode 100644 assigments/exam4/2/BST$Node.class
+ create mode 100644 assigments/exam4/2/BST.class
+ create mode 100644 assigments/exam4/2/BST.java
+ create mode 100644 assigments/exam4/2/Solution.class
+ create mode 100644 assigments/exam4/2/Solution.java
+ create mode 100644 assigments/exam4/2/Student.class
+ create mode 100644 assigments/exam4/2/Student.java
+ create mode 100644 assigments/exam4/2/check_style_errors.txt
+ create mode 100644 assigments/exam4/2/git_output.txt
+ create mode 100644 assigments/exam4/2/md5/input000.txt
+ create mode 100644 assigments/exam4/2/md5/input001.txt
+ create mode 100644 assigments/exam4/2/md5/input002.txt
+ create mode 100644 assigments/exam4/2/md5/input003.txt
+ create mode 100644 assigments/exam4/2/md5/output000.txt
+ create mode 100644 assigments/exam4/2/md5/output001.txt
+ create mode 100644 assigments/exam4/2/md5/output002.txt
+ create mode 100644 assigments/exam4/2/md5/output003.txt
+ create mode 100644 assigments/exam4/2/md5/problem_id.txt
+ create mode 100644 assigments/exam4/2/md5/score.txt
+ create mode 100644 assigments/exam4/2/readme.txt
+ create mode 100644 assigments/exam4/2/result/score.json
+ create mode 100644 assigments/exam4/2/testcases/input000.txt
+ create mode 100644 assigments/exam4/2/testcases/input001.txt
+ create mode 100644 assigments/exam4/2/testcases/input002.txt
+ create mode 100644 assigments/exam4/2/testcases/input003.txt
+ create mode 100644 assigments/exam4/2/testcases/output000.txt
+ create mode 100644 assigments/exam4/2/testcases/output001.txt
+ create mode 100644 assigments/exam4/2/testcases/output002.txt
+ create mode 100644 assigments/exam4/2/testcases/output003.txt
+ create mode 100644 assigments/exam4/2/testcases/problem_id.txt
+ create mode 100644 assigments/exam4/2/testcases_output.txt
+To https://github.com/kvmuralikrishna1993/ADS1.git
+   4400dbd..52c051a  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
